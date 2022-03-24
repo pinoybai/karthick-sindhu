@@ -1,0 +1,1722 @@
+#plug{
+    position: fixed;
+right: 10px;
+top: 20px;
+z-index: 1000;
+}
+
+#plug{
+    border-radius: 30px;
+  outline: 0;
+font-size: 1em;
+font-weight: 600;
+background: #fff;
+border: none;
+padding: 0.9em 1em;
+transition: all .3s ease-out;
+box-shadow: inset 0 -8px 0 0 rgba(0,0,0,.2), 
+1px 1px 0 0 #dad7d4, 
+2px 2px 0 0 #dad7d4
+}
+#plug:hover{
+  color:#444;
+}
+#plug:active{
+  color:#222;
+  box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.2),
+    1px 1px 0 0 #dad7d4,
+    2px 2px 0 0 #dad7d4;
+}
+
+#plug_music_indicator{
+    background: white;
+position: absolute;
+z-index: 1000;
+right: 55px;
+padding: 5px;
+top: 25px;
+opacity: 0;
+visibility: hidden;
+}
+
+#plug_music_indicator:after{
+    left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(213, 213, 213, 0);
+	border-left-color: #fff;
+	border-width: 5px;
+	margin-top: -5px;
+}
+
+.click_indicator{
+width: 40px;
+height: 40px;
+position: relative;
+top: -40px;
+left: 40px;
+}
+
+.click_indicator > svg {
+  transform: scale(0.4);
+}
+
+#boy_click_effect, #girl_click_effect{
+  opacity: 0;
+}
+
+#firefox_mobile{
+    padding-top: 100px;
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+    display: none;
+}
+
+#firefox_mobile > p{
+    text-align: center;
+}
+
+#firefox_mobile > p > a{
+    display: block;
+}
+
+/*preloader animations*/
+
+
+@-webkit-keyframes pulse2 {
+  0% {
+    -webkit-transform: translateY(5px) scale(0.8);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: scale(1) translateY(-10px);
+    opacity: 0.8;
+  }
+  60% {
+    -webkit-transform: scale(0.8) translateY(-20px);
+    opacity: 0;
+  }
+}
+@-moz-keyframes pulse2 {
+  0% {
+    -moz-transform: translateY(5px) scale(0.8);
+    opacity: 0;
+  }
+  30% {
+    -moz-transform: scale(1) translateY(-10px);
+    opacity: 0.8;
+  }
+  60% {
+    -moz-transform: scale(0.8) translateY(-20px);
+    opacity: 0;
+  }
+}
+@keyframes pulse2 {
+  0% {
+    transform: translateY(5px) scale(0.8);
+    opacity: 0;
+  }
+  30% {
+    transform: scale(1) translateY(-10px);
+    opacity: 0.8;
+  }
+  60% {
+    transform: scale(0.8) translateY(-20px);
+    opacity: 0;
+  }
+}
+.pulse2 {
+  -webkit-animation-name: pulse2;
+  animation-name: pulse2;
+}
+
+.loaderWrap{
+	width: 100%;
+	position: fixed;
+	height: 100%;
+	background: #fff; 
+	z-index: 9999;
+	text-align:center;
+}
+
+#loader {
+	display: block;
+	position: absolute;
+	margin: auto;
+	top: 45%;
+	width:100%;
+	bottom: 0;
+}
+.loader-heart{
+	display:inline-block;
+}
+.loader-heart svg{ 
+	opacity: 0;
+	-webkit-animation: pulse2 1.8s linear infinite;
+	-moz-animation: pulse2 1.8s linear infinite;
+	-ms-animation: pulse2 1.8s linear infinite;
+	animation: pulse2 1.8s linear infinite;
+}
+.loader-heart2  svg{
+	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+	-moz-animation-delay: 0.2s;
+}
+.loader-heart3  svg{
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+	-moz-animation-delay: 0.4s;
+}
+.loader-heart4  svg{
+	animation-delay: 0.6s;
+	-webkit-animation-delay: 0.6s;
+	-moz-animation-delay: 0.6s;
+}
+.loader-heart1 svg{
+	animation-delay: 0.8s;
+	-webkit-animation-delay: 0.8s;
+	-moz-animation-delay: 0.8s;
+}
+.loader-heart5  svg{
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+}
+.loader-heart6  svg{
+	animation-delay: 1.2s;
+	-webkit-animation-delay: 1.2s;
+	-moz-animation-delay: 1.2s;
+}
+.loader-heart7  svg{
+	animation-delay: 1.4s;
+	-webkit-animation-delay: 1.4s;
+	-moz-animation-delay: 1.4s;
+}
+
+
+/*prelaoder animations end*/
+   
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#footer{
+    position: relative;
+    width:100%;
+    background: #423b3b;
+    padding: 20px 0;
+}
+
+#footer_text{
+    color: white;
+    text-align: center;
+margin: 0;
+}
+
+#footer_text > span{
+    display: block;
+    color: #f05d5d;
+    font-size: 30px;
+margin: 10px 0;
+}
+
+/*the initial invitation div*/
+#initial-invite-1{
+	position: relative; 
+	width: 100%; 
+	height: auto; 
+	background: url('../img/sky.png') #25CCF7;
+	background-position: 80px 20px;
+}
+
+.ribbon_text{
+	background: url('../img/save-our-date.png');
+	background-size: cover;
+	width: 350px;
+	height: 100px;
+	position: relative;
+	margin: 0px auto;
+	top: 20px;
+}
+
+.groom_weds_bride_jumbo_cover{
+	width: 650px;
+	height: 300px;
+	margin: 0px auto;
+	margin-top: 50px;
+	position: relative;
+}
+
+.groom_weds_bride_image_jumbo{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.groom_image, .bride_image, .and_text{
+	display: inline-block;
+	position: relative;
+}
+
+.groom_image{
+	float: left;
+	background: url('../img/customer-images/groom.jpg');
+}
+
+.bride_image{
+	float: right;
+	background: url('../img/customer-images/bride.jpg');
+}
+
+.groom_image > .name, .bride_image > .name{
+	background: url('../img/cloud.png') no-repeat;
+	width: 280px;
+    height: 90px;
+    bottom: -15px;
+    position: absolute;
+    text-align: center;
+    padding-top: 35px;
+    font-size: 30px;
+	font-family: 'Petit Formal Script', sans-serif;
+}
+
+.groom_image, .bride_image{
+	width: 300px;
+	height: 300px;
+	border-radius: 200px;
+	border: 10px solid #fff;
+	background-size: contain;
+}
+
+.and_text{
+	width: 100px;
+    height: 90px;
+    background: url(../img/and-heart.png) no-repeat;
+    position: absolute;
+    background-size: contain;
+    text-align: center;
+    padding-top: 24px;
+    color: white;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-left: -25px;
+    transform: rotate(-15deg);
+    z-index: 2;
+    font-family: 'Petit Formal Script', sans-serif;
+    font-size: 20px;
+}
+
+.jumbo_message{
+	position: relative;
+    margin: 0px auto;
+    color: white;
+    font-family: 'allura', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    background: #25CCF7;
+}
+
+.invite_scroll_down_message{
+	position: relative;
+    margin: 0px auto;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    background: #25CCF7;
+}
+
+.invite_scroll_down_message > span{
+	display: block;
+}
+
+.venue_block{
+	font-family: 'Raleway', sans-serif;
+	width: 100%;
+    position: relative;
+    background: #25CCF7;
+    color: white;
+    text-align: center;
+}
+
+.venue_block_title{
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.venue_block_content{
+	font-size: 18px;
+	width: 500px;
+    margin: 0px auto;
+    padding-bottom: 20px;
+}
+
+.marriage_details_cover{
+	width: 100%;
+	background: #25CCF7;
+	position: relative;
+	text-align: center;
+}
+
+.marriage_details{
+	width: 500px;
+	height: 100px;
+	margin: 0px auto;
+	position: relative;
+	display: block;
+	background: #25CCF7;
+	color: white;
+}
+
+.marriage_details > .marriage_detail_block{
+	display: inline-block;
+	width: 160px;
+	font-family: 'Raleway', sans-serif;
+	height: 100px;
+	float: left;
+	text-align: center;
+}
+
+.middle_block:before, .last_block:before{
+	content: " ";
+    border: 1px solid white;
+    height: 50px;
+    margin-top: 10px;
+    float: left;
+}
+
+.marriage_block_title{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/*boy intro scene styles*/
+
+#window-top-marker{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 30px;
+	z-index: 100;
+}
+
+.scene_marker{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 30px;
+	z-index: 100;
+}
+
+#video{
+	padding: 0;
+	margin: 0;
+	min-height: 7500px;
+}
+
+/*durations of animations in the scene*/
+
+#boy-story-scene-1-duration-container{
+	position: relative;
+	min-height: 10000px;
+	background: #25CCF7;
+}
+
+#girl-story-scene-1-duration-container{
+	position: relative;
+	min-height: 10000px;
+	background: #25CCF7;
+}
+
+#met_proposal-story-scene-1-duration-container{
+	position: relative;
+	min-height: 10000px;
+}
+
+#reminder_subscribe-story-scene-1-duration-container{
+	position: relative;
+	min-height: 1000px;
+}
+
+/*end durations of animaitons in the scene*/
+
+.scene{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	height:100vh;
+}
+
+/*boy scene design starts*/
+
+#boy-story-scene-1 .ground{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	bottom: 0;
+	background: url('../img/ground.png');
+}
+
+#boy-story-scene-1 .bush{
+	position: absolute;
+	width: 100%;
+	height: 340px;
+	bottom: 39px;
+	background: url('../img/background-sprite-color-optimized.png');
+	background-position-y: bottom !important;
+}
+
+#boy-story-scene-1 .city{
+	position: absolute;
+	width: 100%;
+	height: 400px;
+	bottom: 130px;
+	background: url('../img/city.png');
+	background-position-y: bottom !important;
+}
+
+#boy-story-scene-1 .mountain{
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	bottom: 50px;
+	background: url('../img/mountain-2.png') repeat-x;
+	background-size: contain;
+}
+
+#boy-story-scene-1 .parachute{
+	position: relative;
+    margin: 50px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/parachute.png);
+    background-size: contain;
+    left: 60%;
+    transform: translatex(-60%);
+}
+
+#boy-story-scene-1 .parachute-2{
+	width: 50px;
+    height: 50px;
+	background: url(../img/parachute-2.png);
+	background-size: contain;
+	left: 50%;
+}
+
+#boy-story-scene-1 .airplane{
+	width: 100px;
+	height: 50px;
+	margin-top: 100px;
+	background: url(../img/airplane.png) no-repeat;
+	background-size: contain;
+	left: -200px;
+	position: absolute;
+}
+
+#boy-story-scene-1 .sky{
+	position: absolute;
+	width: 100%;
+	height: 95%;
+	bottom: 39px;
+	background: url('../img/sky.png') repeat-x;
+	background-color: #25CCF7;
+}
+
+#boy-story-scene-1 .main-character{
+	position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: 2px;
+    right: 200px;
+    z-index: 1;
+    background: url(../img/boy-sprite.png) 900px 0px;
+}
+
+#boy-story-scene-1 .parents{
+	position: absolute;
+    width: 215px;
+    height: 200px;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1;
+    background: url(../img/parents.png);
+}
+
+#boy-story-scene-1 .parents > .mom-name, #boy-story-scene-1 .parents > .dad-name{
+	position: absolute;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: auto;
+    top: -50px;
+    text-align: center;
+}
+
+#boy-story-scene-1 .parents > .dad-name{
+	left: 118px;
+}
+
+#boy-story-scene-1 .parents > .mom-name > span,#boy-story-scene-1  .parents > .dad-name > span{
+	display: block;
+	font-size: 10px;
+}
+
+#boy-story-scene-1 .parents > .mom-name:after, #boy-story-scene-1 .parents > .dad-name:after{
+	top: 80%;
+	left: 60%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(250, 250, 250, 0);
+	border-top-color: white;
+	border-width: 18px;
+	margin-left: -18px;
+}
+
+#boy-story-scene-1 .parents > .dad-name:after{
+	left: 30%;
+}
+
+#boy-story-scene-1 > .main-character > .character-dialogue{
+	position: absolute;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 250px;
+    top: -90px;
+    left: -160px;
+	min-height: 110px;
+}
+
+#boy-story-scene-1 > .main-character > .character-dialogue:after {
+	top: 98%;
+	left: 84%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(250, 250, 250, 0);
+	border-top-color: white;
+	border-width: 18px;
+	margin-left: -18px;
+}
+
+#boy-story-scene-1 > .memory-building-1{
+	position: absolute;
+	left: -700px;
+	width: 500px;
+    height: 300px;
+	bottom: 40px;
+	background: url(../img/school-1.png);
+	z-index: 3;
+}
+
+#boy-story-scene-1 > .memory-building-2{
+	position: absolute;
+	left: -1500px;
+	width: 500px;
+	height: 400px;
+	bottom: 40px;
+	background: url(../img/college-1.png);
+	z-index: 3;
+}
+
+#boy-story-scene-1 > .memory-building-3{
+	position: absolute;
+	left: -2000px;
+	width: 550px;
+	height: 450px;
+	bottom: 40px;
+	background: url(../img/college-2.png);
+	z-index: 3;
+}
+
+/*school memories paper fold slide gallery*/
+
+#boy-story-scene-1  #slider-container{
+    position: relative;
+    width: 370px;
+    height: 270px;
+    margin-left: 100px;
+    opacity: 0;
+    border: 10px solid #eaeaea;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.current_image{
+  z-index: 1;
+}
+
+#slider-container .back-1,#slider-container .back-2,#slider-container .back-3,#slider-container .back-4{
+  background: white;
+}
+
+#slider-container > .image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#slider-container .fold, .back-1, .back-2, .back-3, .back-4{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  z-index:0;
+}
+
+#slider-container .image1 .fold{
+   background: url('../img/customer-images/boy-1.jpg');
+}
+
+#slider-container .image2 .fold{
+   background: url('../img/customer-images/boy-2.jpg');
+}
+
+#slider-container .image3 .fold{
+  background: url('../img/customer-images/boy-3.jpg');
+}
+
+#slider-container .image4 .fold{
+   background: url('../img/customer-images/boy-4.jpg');
+}
+
+#slider-container .fold.front2,#slider-container .back-2{
+  right: 0;
+  background-position-x:100%;
+}
+
+#slider-container .fold.front3,#slider-container .back-3{
+  bottom: 0;
+  background-position-y: bottom;
+}
+
+#slider-container .fold.front4,#slider-container .back-4{
+  bottom: 0;
+  right: 0;
+  background-position: 100% 100%;
+}
+
+#slider-container .fold,#slider-container .one{
+  cursor:pointer;
+}
+
+
+/*booklet animaiton for college memories*/
+
+.college-2-memories{
+	opacity: 0;
+}
+
+.booklet_instruction{
+	display: block;
+    font-size: 11px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.booklet_image_text{
+	top: 80px;
+    position: relative;
+    font-size: 16px;
+    font-family: 'raleway', sans-serif;
+}
+
+.booklet{
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  width: 200px;
+  height: 250px;
+  -webkit-font-smoothing:antialiased;
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+  transform: rotate(-5deg);
+}
+
+/*booklet cover*/
+.booklet .octagon {
+    width: 180px;
+    height: 230px;
+    background: #d63031;
+    position: relative;
+    }
+.booklet .octagon:before {
+      content: "";
+    width: 180px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 20px solid #d63031;
+    border-left: 20px solid  #c3f154;
+    border-right: 20px solid  #c3f154;
+    }
+.booklet .octagon:after {
+    content: "";
+    width: 180px;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 20px solid #d63031;
+    border-left: 20px solid #c3f154;
+    border-right: 20px solid #c3f154;
+    }
+.booklet .octagon p{
+		padding-top: 20px;
+	}
+	
+.booklet .page{
+  position:absolute;
+  z-index:0;
+  cursor:pointer;
+}
+
+.booklet > .page > .image{
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+#boy-story-scene-1 > .memory-building-3 > .college-2-memories > .booklet > .page > .image1{
+  background: #d63031;
+  color: #F8EFBA;
+  text-align: center;
+  padding: 10px;
+}
+
+#boy-story-scene-1 > .memory-building-3 > .college-2-memories > .booklet > .page > .image2{
+  background: url('../img/customer-images/university-boy-4.jpg');
+}
+
+#boy-story-scene-1 > .memory-building-3 > .college-2-memories > .booklet > .page > .image3{
+  background: url('../img/customer-images/university-boy-4.jpg');
+  background-position-x: right;
+}
+
+#boy-story-scene-1 > .memory-building-3 > .college-2-memories > .booklet > .page > .image4{
+  background: url('../img/customer-images/university-boy-3.jpg');
+}
+
+#boy-story-scene-1 > .memory-building-3 > .college-2-memories > .booklet > .page > .image5{
+	background: url('../img/customer-images/university-boy-3.jpg');
+  background-position-x: right;
+}
+
+#boy-story-scene-1 > .memory-building-3 > .college-2-memories > .booklet > .page > .image6{
+  background: url('../img/customer-images/university-boy-2.jpg');
+}
+
+#boy-story-scene-1 > .memory-building-3 > .college-2-memories > .booklet > .page > .image7{
+  background: url('../img/customer-images/university-boy-2.jpg');
+  background-position-x: right;
+}
+
+#boy-story-scene-1 > .memory-building-3 > .college-2-memories > .booklet > .page > .image8{
+  background: url('../img/customer-images/university-boy-1.jpg');
+}
+
+#boy-story-scene-1 > .memory-building-3 > .college-2-memories > .booklet > .page > .image9{
+  background: url('../img/customer-images/university-boy-1.jpg');
+  background-position-x: right;
+}
+
+#boy-story-scene-1 > .memory-building-3 > .college-2-memories > .booklet > .page > .image10{
+  background: #d63031;
+  color: #F8EFBA;
+  text-align: center;
+  padding: 10px;
+}
+
+/*school memories poloroid slideshow*/
+#boy-story-scene-1 > .memory-building-2 > .school-memories{
+	position: relative; 
+	background: white;
+	opacity: 0;
+	padding: 10px;
+	padding-bottom: 10px;
+	width: 250px;
+	margin: 0px auto;
+	margin-top: 80px;
+}
+
+#boy-story-scene-1 > .memory-building-2 > .school-memories > .school-building-memory-image-slideshow{
+	position: relative;
+	background: url(../img/ground.png) green;
+	min-height: 200px;
+	width: 100%;
+	overflow: hidden;
+}
+
+#boy-story-scene-1 > .memory-building-2 > .school-memories > .school-building-memory-image-slideshow > img{
+	position: absolute;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+#boy-story-scene-1 > .memory-building-2 > .school-memories > .school-memories-pause,#boy-story-scene-1 > .memory-building-2 > .school-memories > .school-memories-play{
+	width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: rgb(58, 58, 58);
+    border: none;
+    color: rgb(210, 210, 210);
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    margin-top: 10px;
+}
+
+#boy-story-scene-1 > .memory-building-2 > .school-memories > .school-memories-pause:focus,#boy-story-scene-1 > .memory-building-2 > .school-memories > .school-memories-play:focus{
+	outline: 0;
+}
+
+#boy-story-scene-1 > .memory-building-2 > .school-memories > .school-memories-pause{
+ display: none;	
+}
+
+/*info clouds*/
+#boy-story-scene-1 > .memory-building-1 > .info-cloud, .memory-building-2 > .info-cloud{
+		position: absolute;
+		top: -100px;
+		width: 300px;
+		height: auto;
+		background: white;
+		padding: 10px 20px;
+}
+
+#boy-story-scene-1 > .memory-building-1 > .info-cloud:after, .memory-building-2 > .info-cloud:after{
+	top: 98%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    pointer-events: none;
+    margin-left: -18px;
+}
+
+#boy-story-scene-1 > .memory-building-1 > .info-cloud:after{
+	background: url('../img/info-cloud-boy.png');
+}
+
+#boy-story-scene-1 > .memory-building-2 > .info-cloud:after{
+	background: url('../img/info-cloud-college.png');
+}
+
+
+/*end boy scene styles*/
+
+/*begin girl scene style*/
+#girl-story-scene-1 .ground{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	bottom: 0;
+	background: url('../img/ground.png');
+}
+
+#girl-story-scene-1 .bush{
+	position: absolute;
+	width: 100%;
+	height: 340px;
+	bottom: 50px;
+	background: url('../img/background-sprite-yo.png');
+	background-position-y: bottom !important;
+}
+
+#girl-story-scene-1 .city{
+	position: absolute;
+	width: 100%;
+	height: 400px;
+	bottom: 65px;
+	background: url('../img/city-2.png');
+	background-position-y: bottom !important;
+}
+
+#girl-story-scene-1 .mountain{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 150px;
+    background: url(../img/green-mountain.png) repeat-x;
+    background-size: contain;
+}
+
+#girl-story-scene-1 .barrage{
+	position: relative;
+    margin-top: 220px;
+    width: 200px;
+    height: 80px;
+    background: url(../img/barrage.png);
+    background-size: contain;
+    left: 60%;
+    transform: translatex(-60%);
+}
+
+#girl-story-scene-1 .sky{
+	position: absolute;
+	width: 100%;
+	height: 95%;
+	bottom: 39px;
+	background: url('../img/sky.png') repeat-x;
+	background-color: #25CCF7;
+}
+
+#girl-story-scene-1 .main-character{
+	position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: 2px;
+    left: 200px;
+    z-index: 1;
+    background: url(../img/girl-sprite.png) 900px 0px;
+}
+
+#girl-story-scene-1 .parents{
+	position: absolute;
+    width: 215px;
+    height: 200px;
+    bottom: 40px;
+    left: 40px;
+    z-index: 1;
+    background: url(../img/girl-parents.png);
+}
+
+#girl-story-scene-1 .parents > .mom-name, #girl-story-scene-1 .parents > .dad-name{
+	position: absolute;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: auto;
+    top: -50px;
+    text-align: center;
+}
+
+#girl-story-scene-1 .parents > .mom-name{
+	left: 118px;
+	width: 120px;
+}
+
+#girl-story-scene-1 .parents > .mom-name > span,#girl-story-scene-1  .parents > .dad-name > span{
+	display: block;
+	font-size: 10px;
+}
+
+#girl-story-scene-1 .parents > .mom-name:after, #girl-story-scene-1 .parents > .dad-name:after{
+	top: 80%;
+	left: 60%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(250, 250, 250, 0);
+	border-top-color: white;
+	border-width: 18px;
+	margin-left: -18px;
+}
+
+#girl-story-scene-1 .parents > .mom-name:after{
+	left: 30%;
+}
+
+#girl-story-scene-1 > .main-character > .character-dialogue{
+	position: absolute;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 200px;
+    top: -65px;
+    left: 60px;
+}
+
+#girl-story-scene-1 > .main-character > .character-dialogue:after {
+	top: 98%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(250, 250, 250, 0);
+	border-top-color: white;
+	border-width: 18px;
+	margin-left: -5px;
+}
+
+#girl-story-scene-1 > .memory-building-1{
+	position: absolute;
+	left: 2500px;
+	width: 500px;
+    height: 300px;
+	bottom: 40px;
+	background: url(../img/school-1.png);
+	z-index: 3;
+}
+
+#girl-story-scene-1 > .memory-building-2{
+	position: absolute;
+	left: 4500px;
+	width: 500px;
+	height: 400px;
+	bottom: 40px;
+	background: url(../img/college-1.png);
+	z-index: 3;
+}
+
+/*booklet animaiton for college memories*/
+
+.college-2-memories{
+	opacity: 0;
+}
+
+#girl-story-scene-1 > .memory-building-2 > .college-2-memories > .booklet{
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  width: 200px;
+  height: 250px;
+  -webkit-font-smoothing:antialiased;
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+  transform: rotate(-5deg);
+}
+
+/*booklet cover*/
+
+#girl-story-scene-1 > .memory-building-2 > .college-2-memories > .booklet > .page > .image1{
+  background: #d63031;
+  color: #F8EFBA;
+  text-align: center;
+  padding: 10px;
+}
+
+#girl-story-scene-1 > .memory-building-2 > .college-2-memories > .booklet > .page > .image2{
+  background: url('../img/customer-images/college-girl-1.jpg');
+}
+
+#girl-story-scene-1 > .memory-building-2 > .college-2-memories > .booklet > .page > .image3{
+  background: url('../img/customer-images/college-girl-1.jpg');
+  background-position-x: right;
+}
+
+#girl-story-scene-1 > .memory-building-2 > .college-2-memories > .booklet > .page > .image4{
+  background: url('../img/customer-images/college-girl-4.jpg');
+}
+
+#girl-story-scene-1 > .memory-building-2 > .college-2-memories > .booklet > .page > .image5{
+	background: url('../img/customer-images/college-girl-4.jpg');
+  background-position-x: right;
+}
+
+#girl-story-scene-1 > .memory-building-2 > .college-2-memories > .booklet > .page > .image6{
+  background: url('../img/customer-images/college-girl-2.jpg');
+}
+
+#girl-story-scene-1 > .memory-building-2 > .college-2-memories > .booklet > .page > .image7{
+  background: url('../img/customer-images/college-girl-2.jpg');
+  background-position-x: right;
+}
+
+#girl-story-scene-1 > .memory-building-2 > .college-2-memories > .booklet > .page > .image8{
+  background: url('../img/customer-images/college-girl-3.jpg');
+}
+
+#girl-story-scene-1 > .memory-building-2 > .college-2-memories > .booklet > .page > .image9{
+  background: url('../img/customer-images/college-girl-3.jpg');
+  background-position-x: right;
+}
+#girl-story-scene-1 > .memory-building-2 > .college-2-memories > .booklet > .page > .image10{
+  background: #d63031;
+  color: #F8EFBA;
+  text-align: center;
+  padding: 10px;
+}
+
+/*school memories poloroid slideshow*/
+#girl-story-scene-1 > .memory-building-1 > .school-memories{
+	position: relative; 
+	background: white;
+	padding: 10px;
+	padding-bottom: 10px;
+	width: 250px;
+	margin: 0px auto;
+}
+
+#girl-story-scene-1 > .memory-building-1 > .school-memories > .school-building-memory-image-slideshow{
+	position: relative;
+	background: url(../img/ground.png) green;
+	min-height: 200px;
+	width: 100%;
+	overflow: hidden;
+}
+
+#girl-story-scene-1 > .memory-building-1 > .school-memories > .school-building-memory-image-slideshow > img{
+	position: absolute;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+#girl-story-scene-1 > .memory-building-1 > .school-memories > .school-memories-pause,#girl-story-scene-1 > .memory-building-1 > .school-memories > .school-memories-play{
+	width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: rgb(58, 58, 58);
+    border: none;
+    color: rgb(210, 210, 210);
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    margin-top: 10px;
+}
+
+#girl-story-scene-1 > .memory-building-1 > .school-memories > .school-memories-pause:focus,#girl-story-scene-1 > .memory-building-1 > .school-memories > .school-memories-play:focus{
+	outline: 0;
+}
+
+#girl-story-scene-1 > .memory-building-1 > .school-memories > .school-memories-pause{
+ display: none;	
+}
+
+/*info clouds*/
+#girl-story-scene-1 > .memory-building-1 > .info-cloud{
+		position: absolute;
+		top: -100px;
+		width: 300px;
+		height: auto;
+		background: white;
+		padding: 10px 20px;
+}
+
+#girl-story-scene-1 > .memory-building-1 > .info-cloud:after{
+	top: 98%;
+    left: 45%;
+    border: solid transparent;
+    content: " ";
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    pointer-events: none;
+    margin-left: -18px;
+}
+
+#girl-story-scene-1 > .memory-building-1 > .info-cloud:after{
+	background: url('../img/info-cloud-girl.png');
+}
+
+/*met proposal scene 1 designs*/
+
+
+#go_to_top{
+    width:40px;
+    height: 40px;
+    position: absolute;
+    background: #FD7272;
+    top: 5px;
+    right: 5px;
+    font-size: 10px;
+    font-family: 'raleway', san-serif;
+    text-align:center;
+    padding: 5px;
+    color: white;
+    border-radius: 3px;
+}
+
+#go_to_top > .top_text{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.normal_shot_desc{
+    font-size: 20px;
+}
+
+.normal_shot_desc, .normal_shot_desc2{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    width: 300px;
+}
+
+#met_proposal-story-scene-1{
+ background: #00cec9;	
+}
+
+#met_proposal-story-scene-1 > .company_building{
+	background: url(../img/company-building.png) no-repeat;
+    background-size: contain;
+    height: 95%;
+    background-position: center;
+}
+
+#met_proposal-story-scene-1 > .company_building > .company_image_slideshow{
+	position: relative;
+    background: white;
+    width: 350px;
+    height: 250px;
+    left: 50%;
+	border: 10px solid #505050;
+    top: 20%;
+	opacity: 0;
+    transform: translate(-50%);
+    overflow: hidden;
+}
+
+#met_proposal-story-scene-1 > .company_building > .company_image_slideshow > ul{
+	width: 2000px;
+    padding: 0;
+    margin: 0;
+}
+
+#met_proposal-story-scene-1 > .company_building > .company_image_slideshow > ul > li{
+	list-style: none;
+    float: left;
+    display: inline-block;
+}
+
+#met_proposal-story-scene-1 > .company_building > .company_main_characters{
+	background: url(../img/company_main_people.png);
+    height: 240px;
+    width: 300px;
+    position: absolute;
+    bottom: -240px;
+    left: 40%;
+    transform: translatex(-50%);
+}
+
+
+#met_proposal-story-scene-1 > .company_building > .company_main_characters > .character-dialogue{
+	position: absolute;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 300px;
+    top: -65px;
+    left: 60px;
+	transform-origin: bottom left;
+}
+
+#met_proposal-story-scene-1 > .company_building > .company_main_characters > .character-dialogue:after {
+	top: 98%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(250, 250, 250, 0);
+	border-top-color: white;
+	border-width: 18px;
+	margin-left: -5px;
+}
+
+
+/*office room*/
+
+#met_proposal-story-scene-1 > .office_room{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #F8EFBA;
+	top: -100%;
+	z-index: 2;
+}
+
+#met_proposal-story-scene-1 > .office_room > .office_room_scene{
+	width: 70%;
+    position: relative;
+    margin: auto;
+}
+
+#met_proposal-scene-1-svg_description{
+	height: auto;
+    width: 400px;
+    padding: 10px 20px;
+    position: relative;
+    min-height: 80px;
+    color: white;
+    background: brown;
+    margin: -40px auto 0px auto;
+    border: 5px solid #b2b75f;
+	text-align: center;
+}
+
+#met_proposal-scene-1-svg_description > .highlighted_shot_desc{
+	color: #fdcb6e;
+	font-weight: bold;
+}
+
+/*reminder subscribe*/
+
+#reminder_subscribe-story-scene-1{
+	background: rgb(243, 249, 205);
+}
+
+.marriage_invite_text{
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Petit Formal Script', sans-serif;
+	font-weight: bold;
+	padding: 20px;
+}
+
+.marriage_invite_button{
+	text-align: center;
+    background: white;
+    padding: 10px 20px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+    left: 60%;
+	top: 25%;
+    transform: translatex(-60%) rotate(6deg);
+    font-size: 16px;
+}
+
+
+.couple_image_wedding_timer{
+	position: absolute;
+    left: 40%;
+	top:40%;
+    transform: translatex(-40%) rotate(-10deg);;
+}
+
+.couple_image_wedding_timer > img{
+	border: 10px solid white;
+}
+
+.marriage_invite_button > p{
+	margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+.subscribe_reminder_button_link{
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+	font-size: 13px;
+	background: #e74c3c;
+	margin: 20px;
+}
+
+.subscribe_reminder_button_link:hover{
+	color: white;
+	text-decoration: none;
+}
+
+.countdown > p{
+	text-align: center;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 480px) and (orientation: landscape){
+	#girl-story-scene-1 .memory-building-1 > .info-cloud:after{
+		left: 15%;
+	}
+	
+	#girl-story-scene-1 .memory-building-1 > .info-cloud{
+		left: 360px;
+		width: 210px;
+		font-size: 9px;
+	}
+	
+	#boy-story-scene-1 > .memory-building-1 > .info-cloud, .memory-building-2 > .info-cloud{
+		width: 210px;
+		font-size: 9px;
+		left:-100px;
+	}
+	
+	#met_proposal-story-scene-1 > .company_building > .company_main_characters{
+		left: 20%;
+	}
+}
+
+
+@media screen and (max-width: 480px) { 
+/* mobile */ 
+
+#bottom_wedding_timer_cover{
+    position: relative;
+    width: 100%;
+    min-height:500px;
+}
+
+#bottom_wedding_timer_cover > .couple_image_wedding_timer{
+    top:100px;
+    left:20px;
+}
+
+#bottom_wedding_timer_cover > .marriage_invite_button{
+    top:10px;
+}
+
+#scroll_to_top{
+    display:block;
+    position:relative;
+    width:100%;
+    text-align:center;
+}
+
+.venue_block_content, .marriage_details{
+	width: 100%;
+}
+
+.marriage_details{
+	height: 180px;
+}
+
+.last_block:before{
+	display: none;
+}
+
+.marriage_details > .marriage_detail_block{
+	float: none;
+}
+
+.countdown > p{
+	font-size: 15px;
+}
+
+.couple_image_wedding_timer{
+	top:52%;
+	left: 50px;
+}
+
+.marriage_invite_button{
+	left: 74%;
+    top: 31%;
+}
+
+.marriage_invite_text{
+	font-size: 17px;
+}
+
+
+#initial-invite-1{
+	background-position: 150px 55px;
+}
+
+.groom_weds_bride_jumbo_cover{
+	width: 100%;
+	height: 533px;
+	margin-top: -10px;
+}
+
+.groom_image, .bride_image{
+	float: none;
+	position: relative;
+	width: 250px;
+	height: 250px;
+	margin: 33px;
+    left: 30%;
+    transform: translatex(-30%);
+}
+
+.groom_image, .bride_image, .and_text{
+	display: block;
+}
+
+.and_text{
+	position: absolute;
+	margin: 0;
+	width: 80px;
+    height: 80px;
+	font-size: 15px;
+	padding-top: 24px;
+	top: 235px;
+	left: 50%;
+    transform: translatex(-50%) rotate(-15deg);
+}
+
+.groom_image > .name, .bride_image > .name{
+	font-size: 24px;
+    width: 223px;
+	bottom: -40px;
+	padding-top: 24px;
+    background-size: contain;
+}
+
+.jumbo_message{
+	font-size: 43px;
+}
+
+#boy-story-scene-1 > .main-character{
+	right: -20px;
+	z-index: 2;
+}
+
+#boy-story-scene-1 > .main-character > .character-dialogue {
+	left: -200px;
+	top: -5px;
+	border: 1px solid; 
+	min-height: 60px;
+}
+
+#boy-story-scene-1 > .main-character > .character-dialogue:after,#boy-story-scene-1 > .main-character > .character-dialogue:before {
+	left: 107%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	margin-left: -20px;
+}
+
+#boy-story-scene-1 > .main-character > .character-dialogue:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #ffffff;
+	border-width: 10px;
+	margin-top: -10px;
+}
+#boy-story-scene-1 > .main-character > .character-dialogue:before {
+	border-color: rgba(186, 186, 186, 0);
+	border-left-color: #bababa;
+	border-width: 11px;
+	margin-top: -11px;
+}
+
+#boy-story-scene-1 > .memory-building-1 > .info-cloud,#boy-story-scene-1 > .memory-building-2 > .info-cloud {
+	left: 110px;
+}
+
+#boy-story-scene-1 > .airplane{
+	margin-top: 40px;
+}
+
+#boy-story-scene-1 > .mountain{
+	background-size: cover;
+}
+
+#boy-story-scene-1 > .sky{
+	background-size: contain;
+}
+
+.booklet{
+	margin-left: 280px;
+	transform: scale(0.9);
+}
+
+.booklet > .page > .image{
+	width: 200px;
+	height: 240px;
+	background-size: 200% 100%;
+}
+
+.booklet .octagon{
+    width: 180px;
+    height: 220px;
+}
+
+.booklet .octagon:before, #booklet  .octagon:after {
+	width: 180px;
+}
+
+.booklet > .octagon p{
+	font-size: 15px;
+	margin-left: 20px;
+}
+
+/*end boy scene mobile styles*/
+/*begin girl scene mobile styles*/
+
+#girl-story-scene-1 > .memory-building-1 > .school-memories{
+	margin-top: 20px;
+    margin-left: 200px;
+}
+
+#girl-story-scene-1 > .main-character{
+	left: 20px;
+	z-index: 2;
+}
+
+#girl-story-scene-1 > .main-character > .character-dialogue {
+	left: 100px;
+	top: 18px;
+	border: 1px solid; 
+}
+
+#girl-story-scene-1 > .main-character > .character-dialogue:after,#girl-story-scene-1 > .main-character > .character-dialogue:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	margin-left: -20px;
+}
+
+#girl-story-scene-1 > .main-character > .character-dialogue:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #ffffff;
+	border-width: 10px;
+	margin-top: -10px;
+}
+#girl-story-scene-1 > .main-character > .character-dialogue:before {
+	border-color: rgba(186, 186, 186, 0);
+	border-right-color: #bababa;
+	border-width: 11px;
+	margin-top: -11px;
+}
+
+#girl-story-scene-1 > .memory-building-1 > .info-cloud {
+	left: 140px;
+}
+
+#girl-story-scene-1 > .mountain{
+	background-size: cover;
+}
+
+#girl-story-scene-1 > .sky{
+	background-size: contain;
+}
+
+#girl-story-scene-1 > .memory-building-2 > .college-2-memories > .booklet{
+	margin-left: 250px;
+	transform: scale(0.9);
+}
+
+/*met proposal scene mobile edits*/
+#met_proposal-story-scene-1 > .office_room > .office_room_scene{
+	width: 100%;
+    top: 20%;
+}
+
+#met_proposal-scene-1-svg_description{
+	width: 350px;
+}
+
+}
