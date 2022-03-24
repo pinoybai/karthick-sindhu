@@ -378,7 +378,7 @@ function girl_story_1_bring_in_pfold(){
 		
 		.to(girl_story_scene_1_school_memory_building_images, 4, {scale: 0, autoAlpha: 0, rotation: "0"}, '+=15')
 		
-		.set(girl_story_scene_1_main_character, {bottom: 20,backgroundImage: 'url(../karthickwedssindhu/img/college-girl-sprite.png)'})
+		.set(girl_story_scene_1_main_character, {bottom: 20,backgroundImage: 'url(img/college-girl-sprite.png)'})
 		
 		.to(girl_story_scene_1_memory_building_1_info_cloud, 2,{autoAlpha: 0, top: 20}, '-=12');
 	
@@ -454,7 +454,7 @@ function bring_in_pfold(){
 	    .from(boy_story_scene_1_school1_memory_building_images, 10, {rotation: "-10"}, '+=1')
 		.to(boy_story_scene_1_school1_memory_building_images, 10, {autoAlpha: 1}, '-=2')
 		.fromTo(boy_story_scene_1_memory_building_1_info_cloud, 5,{autoAlpha: 0, top: boy_info_cloud_top_from},{autoAlpha: 1, top: boy_info_cloud_top_to}, '-=2')
-		.set(boy_story_scene_1_main_character, {bottom: 20,backgroundImage: 'url(../karthickwedssindhu/img/college-boy-sprite-2.png)'},'+=5')
+		.set(boy_story_scene_1_main_character, {bottom: 20,backgroundImage: 'url(img/college-boy-sprite-2.png)'},'+=5')
 		.to(boy_story_scene_1_memory_building_1_info_cloud, 5,{autoAlpha: 0, top: 50}, '+=20')
 		.to(boy_story_scene_1_school1_memory_building_images, 20, {autoAlpha: 0, rotation: "10"}, '+=15');
 	
@@ -487,7 +487,7 @@ function kid_to_college(){
 		.to(boy_story_scene_1_school_memory_building_images, 10, {scale: 0, autoAlpha: 0, rotation: "360"}, '+=50')
 		.to(boy_story_scene_1_memory_building_2_info_cloud, 5,{autoAlpha: 0, top: -25}, '-=5')
 		
-		.set(boy_story_scene_1_main_character, {bottom: 20,backgroundImage: 'url(../karthickwedssindhu/img/man-sprite.png)'});
+		.set(boy_story_scene_1_main_character, {bottom: 20,backgroundImage: 'url(img/man-sprite.png)'});
 		
 		
 	return tl;
